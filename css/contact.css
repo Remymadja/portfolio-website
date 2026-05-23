@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #222;
+    padding: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: cyan;
+    transform: translateY(-2px);
+}
+
+/* CONTACT PAGE */
+.contact-page {
+    padding: 60px 80px;
+}
+
+/* TITLE */
+.contact-box h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* INFO SECTION */
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* LINKS */
+.contact-info a {
+    color: cyan;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-info a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+}
+
+/* INPUTS */
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #111;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* FOCUS EFFECT (IMPORTANT POLISH) */
+input:focus,
+textarea:focus {
+    border: 1px solid cyan;
+    box-shadow: 0 0 8px cyan;
+}
+
+/* TEXTAREA */
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* BUTTON */
+button {
+    width: 160px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: cyan;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px cyan;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .contact-page {
+        padding: 30px 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
