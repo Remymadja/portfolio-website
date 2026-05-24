@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
 
+    <title>Contact | Remy Portfolio</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Contact Remy Madja for projects, collaboration, or inquiries.">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/contact.css">
 </head>
@@ -12,46 +17,79 @@
 <body>
 
 <!-- NAVIGATION -->
-<nav>
-    <a href="./index.html">Home</a>
-    <a href="./about.html">About</a>
-    <a href="./work.html">Work</a>
-    <a href="./contact.html">Contact</a>
-</nav>
+<header>
+    <nav aria-label="Main navigation">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./work.html">Work</a>
+        <a href="./contact.html" aria-current="page">Contact</a>
+    </nav>
+</header>
 
-<!-- CONTACT CONTENT -->
+<!-- MAIN CONTENT -->
 <main class="contact-page">
 
     <section class="contact-box">
 
         <h1>Contact Me</h1>
 
+        <!-- CONTACT INFO -->
         <div class="contact-info">
-            <p>Email: r.madja@unasat.sr</p>
-            <p>Phone: +597 892 3404</p>
+            <p><strong>Email:</strong> r.madja@unasat.sr</p>
+            <p><strong>Phone:</strong> +597 892 3404</p>
 
             <p>
-                <a href="https://github.com/Remymadja" target="_blank">GitHub</a>
+                <a href="https://github.com/Remymadja" target="_blank" rel="noopener noreferrer">
+                    GitHub Profile
+                </a>
             </p>
         </div>
 
+        <!-- CONTACT FORM -->
         <form id="contactForm">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Message" required></textarea>
-            <button type="submit">Send</button>
+
+            <label for="name">Name</label>
+            <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Your Name" 
+                required
+                autocomplete="name">
+
+            <label for="email">Email</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Your Email" 
+                required
+                autocomplete="email">
+
+            <label for="message">Message</label>
+            <textarea 
+                id="message" 
+                name="message" 
+                placeholder="Write your message..." 
+                required
+                rows="5"></textarea>
+
+            <button type="submit">Send Message</button>
+
         </form>
 
     </section>
 
 </main>
 
-<!-- TOGGLE BUTTON (INSIDE BODY) -->
-<button id="themeToggle">Toggle Theme</button>
+<!-- FOOTER AREA -->
+<footer>
+    <p>© 2026 Remy Madja. All rights reserved.</p>
+</footer>
 
-<!-- SCRIPTS -->
-<script src="./js/contact.js"></script>
-<script src="./js/main.js"></script>
+<!-- SCRIPTS (defer = safer on Netlify) -->
+<script src="./js/main.js" defer></script>
+<script src="./js/contact.js" defer></script>
 
 </body>
 </html>
