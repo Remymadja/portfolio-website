@@ -85,3 +85,39 @@ nav a:hover {
 .light-mode nav {
     background: #eee;
 }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+    transition: 0.3s;
+}
+
+/* LIGHT MODE */
+body.light-mode {
+    background: white;
+    color: black;
+}
+
+/* NAV LIGHT MODE FIX */
+body.light-mode nav {
+    background: #eee;
+}
+
+body.light-mode nav a {
+    color: black;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+}
+
+footer button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: cyan;
+    color: black;
+    cursor: pointer;
+}

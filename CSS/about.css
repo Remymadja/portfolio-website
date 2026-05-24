@@ -1,56 +1,31 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #111;
-    color: white;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background: #222;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-}
-
-.hero {
-    text-align: center;
+.about {
+    max-width: 1000px;
+    margin: auto;
     padding: 60px;
+    text-align: center;
 }
 
-img {
-    max-width: 200px;
-    border-radius: 50%;
+.about h1 {
+    font-size: 55px;
 }
 
-section {
-    padding: 40px;
+.about h2 {
+    margin-top: 40px;
+    font-size: 32px;
 }
 
-.project {
-    padding: 20px;
-    border: 1px solid #333;
-    margin: 20px;
+.about p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 25px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
+.about ul {
+    list-style: none;
+    padding: 0;
 }
 
-input, textarea, button {
-    margin: 10px 0;
-    padding: 10px;
-}
-
-@media(max-width:768px){
-    nav {
-        flex-direction: column;
-    }
+.about li {
+    font-size: 20px;
+    margin: 15px 0;
 }
