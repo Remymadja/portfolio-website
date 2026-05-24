@@ -11,7 +11,7 @@ document
     };
 
     const response = await fetch(
-        "http://localhost:3000/contact",
+        "https://portfolio-api-6gr8.onrender.com/contact",
         {
             method: "POST",
             headers: {
