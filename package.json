@@ -1,8 +1,14 @@
 {
   "name": "portfolio-website_remy",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Portfolio website with backend",
+  "main": "server.js",
+  "type": "commonjs",
+
+  "scripts": {
+    "start": "node server.js"
+  },
+
   "dependencies": {
     "accepts": "^2.0.0",
     "aws-ssl-profiles": "^1.1.2",
@@ -81,12 +87,5 @@
     "unpipe": "^1.0.0",
     "vary": "^1.1.2",
     "wrappy": "^1.0.2"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+  }
 }
